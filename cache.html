@@ -5,17 +5,33 @@
 body {
     min-height: 100vh;
     min-width: 100vw;
-    position: relative;
 
-   /* Background Image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
     background-image: url('icon0.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-color: #222222;
-   }
-.info{position:relative;top:39%;}
+
+    overflow: hidden;
+}
+
+.info {
+    font-size: 22px;
+    color: #FFD700;
+    text-shadow: 0 0 10px rgba(255,215,0,0.7);
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px 40px;
+    border-radius: 15px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
 </style>
 <script>
 history.replaceState(null,null,'index.html');var histlength=history.length;history.go(-histlength);
